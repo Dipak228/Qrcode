@@ -1,0 +1,8 @@
+<h2>Student Details</h2>
+
+Name: <span th:text="${student.name}"></span><br>
+Roll No: <span th:text="${student.rollNo}"></span><br>
+Room No: <span th:text="${student.roomNo}"></span><br>
+Phone: <span th:text="${student.phone}"></span><br>
+
+<img th:src="@{'/uploads/' + ${student.photoPath}}" width="200">
