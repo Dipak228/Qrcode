@@ -15,6 +15,7 @@ import com.example.Qrcode.model.Student;
 import com.example.Qrcode.service.StudentService;
 import com.example.Qrcode.util.QRcodeGenerator;
 
+
 @Controller
 public class StudentController {
 
@@ -56,7 +57,7 @@ public String saveStudent(@RequestParam String name,
         service.save(s);
 
         // ✅ IMPORTANT FIX (LIVE URL)
-        String baseUrl = "https://thorough-peace-production-c59d.up.railway.app/";
+        String baseUrl = "thorough-peace-production-c59d.up.railway.app";
 
         String qrText = baseUrl + "/room/" + roomNo;
 
